@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sorting Algorithms Pure JS</title>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container">
+  <div class="wrapper">
+    <form id="randArr">
+      <h2>Generate random array</h2>
+      <p>Type length and range of array</p>
+      <label>Array length: </label>
+      <input class="input" type="number" max="10000" min="1" value="10">
+      <label>Range: </label>
+      <input class="inputRange" type="number" value="-5" title="range"> - 
+      <input class="inputRange" type="number" value="10" title="range">
+      <button class="btn" role='button'>generate</button>
+      <div class="output col-md-10"></div>
+    </form>
+    <section id="ct-bogosort">
+      <div class="col-md-6">
+        <h1>Bogosort</h1>
+        <p>In computer science, bogosort (also permutation sort, stupid sort, slowsort, shotgun sort or monkey sort) is a highly ineffective sorting algorithm based on the generate and test paradigm. The algorithm successively generates permutations of its input until it finds one that is sorted. It is not useful for sorting, but may be used for educational purposes, to contrast it with more efficient algorithms.</p>
+        <p>Input numbers in the field to sort. Every new number must be separated by one space.</p>
+        <p><i class="fa fa-exclamation-triangle "></i>Inputing more than 10 numbers may result in significant decrease on performance and even freeze the browser by evil monkey.</p>
+        <form>
+          <input class="input">
+          <button class="btn" role='button'>Random sort</button>
+          <button class="btn btnClear">Clear input</button>
+        </form>
+        <div class="output"></div>
+      </div>
+    </section>
+    <section  id="ct-bubble">
+      <div class="col-md-6">
+        <h1>Bubblesort</h1>
+        <p>Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. It can be practical if the input is usually in sorted order but may occasionally have some out-of-order elements nearly in position.</p>
+        <p>Input numbers in the field to sort. Every new number must be separated by one space.</p>
+        <form>
+          <input class="input">
+          <button class="btn" role='button'>Bubble Sort</button>
+          <button class="btn btnClear">Clear input</button>
+        </form>
+        <div class="output"></div>
+      </div>
+    </section>
+  <script src="js/index.js"></script>
+  </div>
+</body>
+</html>

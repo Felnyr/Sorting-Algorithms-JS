@@ -1,0 +1,47 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body{
+  min-width:320px;
+  height:auto;
+}
+.output{
+  height: 200px;
+  margin: 20px 0;
+  overflow: auto;
+}
+#randArr{
+  margin: 20px 0;
+}
+
+#randArr input{
+  width: 80px;
+}
+#randArr [title=range]{
+  width: 60px;
+  text-align: center;
+}
+section{
+  border-top: 1px solid;
+}
+#ct-bogosort{
+  background-image: url(../images/monkey_typing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+i{
+  margin-right:10px;
+}
+#ct-bubble{
+  background-image: url(../images/bubbles.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+  #ct-bogosort{
+    background-image:none;
+  }
+  #ct-bubble{
+    background-image:none;
+  }
+}
